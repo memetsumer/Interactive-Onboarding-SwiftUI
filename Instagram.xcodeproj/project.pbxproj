@@ -11,6 +11,10 @@
 		F05CB5932955C104000D7CA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CB5922955C104000D7CA5 /* ContentView.swift */; };
 		F05CB5952955C105000D7CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05CB5942955C105000D7CA5 /* Assets.xcassets */; };
 		F05CB5982955C105000D7CA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05CB5972955C105000D7CA5 /* Preview Assets.xcassets */; };
+		F05CB5A02955C439000D7CA5 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F05CB59F2955C439000D7CA5 /* RiveRuntime */; };
+		F05CB5A72955F94E000D7CA5 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CB5A62955F94E000D7CA5 /* Box.swift */; };
+		F05CB5AB29575302000D7CA5 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CB5AA29575302000D7CA5 /* SignUpButton.swift */; };
+		F05CB5AF29577386000D7CA5 /* CTA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CB5AE29577386000D7CA5 /* CTA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		F05CB5922955C104000D7CA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F05CB5942955C105000D7CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F05CB5972955C105000D7CA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F05CB5A62955F94E000D7CA5 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		F05CB5AA29575302000D7CA5 /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
+		F05CB5AE29577386000D7CA5 /* CTA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05CB5A02955C439000D7CA5 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +43,7 @@
 		F05CB5842955C104000D7CA5 = {
 			isa = PBXGroup;
 			children = (
-				F05CB58F2955C104000D7CA5 /* Instagram */,
+				F05CB58F2955C104000D7CA5 /* Onboarding */,
 				F05CB58E2955C104000D7CA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +56,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F05CB58F2955C104000D7CA5 /* Instagram */ = {
+		F05CB58F2955C104000D7CA5 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				F05CB5A62955F94E000D7CA5 /* Box.swift */,
 				F05CB5902955C104000D7CA5 /* InstagramApp.swift */,
 				F05CB5922955C104000D7CA5 /* ContentView.swift */,
 				F05CB5942955C105000D7CA5 /* Assets.xcassets */,
 				F05CB5962955C105000D7CA5 /* Preview Content */,
+				F05CB5AA29575302000D7CA5 /* SignUpButton.swift */,
+				F05CB5AE29577386000D7CA5 /* CTA.swift */,
 			);
-			path = Instagram;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		F05CB5962955C105000D7CA5 /* Preview Content */ = {
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Instagram;
+			packageProductDependencies = (
+				F05CB59F2955C439000D7CA5 /* RiveRuntime */,
+			);
 			productName = Instagram;
 			productReference = F05CB58D2955C104000D7CA5 /* Instagram.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = F05CB5842955C104000D7CA5;
+			packageReferences = (
+				F05CB59E2955C439000D7CA5 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = F05CB58E2955C104000D7CA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05CB5932955C104000D7CA5 /* ContentView.swift in Sources */,
+				F05CB5A72955F94E000D7CA5 /* Box.swift in Sources */,
+				F05CB5AF29577386000D7CA5 /* CTA.swift in Sources */,
 				F05CB5912955C104000D7CA5 /* InstagramApp.swift in Sources */,
+				F05CB5AB29575302000D7CA5 /* SignUpButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +286,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Instagram/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Preview Content\"";
 				DEVELOPMENT_TEAM = 265M5Q6ARM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Instagram/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Preview Content\"";
 				DEVELOPMENT_TEAM = 265M5Q6ARM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F05CB59E2955C439000D7CA5 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F05CB59F2955C439000D7CA5 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F05CB59E2955C439000D7CA5 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F05CB5852955C104000D7CA5 /* Project object */;
 }
